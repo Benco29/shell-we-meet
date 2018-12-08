@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loginTxtTitleSize">30sp</dimen>
+    <dimen name="editTextMargin">5dp</dimen>
+    <dimen name="btnMargin">5dp</dimen>
+    <dimen name="splashTxtSize">25sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="splashTxtTtlSize">35sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="profileTxtMargin">10dp</dimen>
+    <dimen name="profileTxtSize">15sp</dimen>
+    <dimen name="profileTxtTtlSize">26sp</dimen>
+    <dimen name="progBarMargin">15dp</dimen>
+    <dimen name="fabBtnMargin">10dp</dimen>
+    <dimen name="completeTxtSize">20sp</dimen>
+    <dimen name="completeMargin">8dp</dimen>
+    <dimen name="profileImageCellTxtSize">10sp</dimen>
+    <dimen name="spacing">2</dimen>
+    <dimen name="addLocationTxtSize">23sp</dimen>
+    <dimen name="saveIconFABMargins">10dp</dimen>
+    <dimen name="profileImgMarginHorizontal">25dp</dimen>
+    <dimen name="profileImgMarginVertical">50dp</dimen>
+</resources>

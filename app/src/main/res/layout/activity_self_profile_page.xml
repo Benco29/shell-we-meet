@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightPrimary"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".SelfProfilePage">
+
+    <LinearLayout
+        android:id="@+id/selfProfileForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorLightPrimary"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+
+                <com.theartofdev.edmodo.cropper.CropImageView
+                    android:id="@+id/myProfPageProfImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorDivider"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/myProfileUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="MyUsername"/>
+
+                <TextView
+                    android:id="@+id/myProfileAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Age"/>
+
+
+                <TextView
+                    android:id="@+id/myProfileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Email"/>
+
+
+                <TextView
+                    android:id="@+id/myProfileLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="location"/>
+
+                <TextView
+                    android:id="@+id/myProfileBirthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="birthDate"/>
+
+                <TextView
+                    android:id="@+id/myProfileGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="gender"/>
+
+                <TextView
+                    android:id="@+id/myProfileInterestedIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Interested In: "/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorDivider"
+            android:layoutDirection="ltr"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/selfProfilePageDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                android:text="@string/longDescriptionTxt"/>
+
+            <LinearLayout
+                android:id="@+id/botHalfMyProfilePage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/selfProfileFAB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/saveIconFABMargins"
+        android:src="@drawable/ic_save_icon"
+        android:visibility="visible"
+        app:backgroundTint="@color/saveIconColor"
+        app:layout_anchor="@id/botHalfMyProfilePage"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBtnProfileImgEnlarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/saveIconFABMargins"
+        android:src="@drawable/ic_enlarge_image_icon"
+        android:visibility="visible"
+        app:backgroundTint="@color/enlargeIconColor"
+        app:layout_anchor="@id/botHalfMyProfilePage"
+        app:layout_anchorGravity="bottom|start"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBtnCropImgProfile"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="245dp"
+        android:layout_marginRight="200dp"
+        android:src="@drawable/cropicon"
+        app:backgroundTint="@color/fabProfileImgColor"
+        android:onClick="onCropImageClick"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBtnMyProfileImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="245dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/icongallery"
+        app:backgroundTint="@color/fabProfileImgColor"
+        android:onClick="onLoadNewImageClick"/>
+
+</android.support.design.widget.CoordinatorLayout>

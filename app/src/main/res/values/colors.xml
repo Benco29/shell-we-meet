@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorAccent">#306bac</color>
+    <color name="colorLightPrimary">#FFE0B2</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorTextIcons">#212121</color>
+
+    <color name="loginTxtTitle">#ff6d33</color>
+    <color name="btnColor">#ff7700</color>
+    <color name="background">#98b9f2</color>
+    <color name="splashBackground">#3a81ae</color>
+
+    <color name="myChatTxt">#3a81ae</color>
+    <color name="yourChatTxt">#42ae3a</color>
+
+    <color name="splashTxtColor">#0009a9</color>
+    <color name="profileBackgroundColor">#ffffff</color>
+    <color name="blackText">#000000</color>
+    <color name="splashTxtColorHighlight">#0009a9</color>
+    <color name="fabProfileImgColor">#00818181</color>
+    <color name="btnNotActiveColor">#838383</color>
+    <color name="matchesBackgroundColor">#c9c8c8</color>
+    <color name="profileImageCellTxtColor">#000000</color>
+    <color name="greenOnlineTxt">#3fce1c</color>
+    <color name="saveIconColor">#2188ef</color>
+    <color name="enlargeIconColor">#21ef92</color>
+
+</resources>

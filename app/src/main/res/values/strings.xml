@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Shell We Meet</string>
+    <string name="loginTxtTitle">Login</string>
+    <string name="usernameLoginHint">Username</string>
+    <string name="passwordLoginHint">Password</string>
+    <string name="mainLoginBtn">Login</string>
+    <string name="mainRegisterBtn">Register</string>
+    <string name="loginOrRegisterBtnTxt">Login or register</string>
+    <string name="emailLoginHint">Email</string>
+    <string name="splashTxt">Get out of your Shell, \nAnd find your match!</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+       completions."
+    </string>
+    <string name="splashTxtTtl">Shell</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="logRegCheckBoxTxt">Stay Logged in</string>
+    <string name="regConfirmPassHint">Confirm Password</string>
+    <string name="regPasswordHint">Choose Password</string>
+    <string name="registerBtnTxt">Register</string>
+    <string name="profileUsername">username</string>
+    <string name="profileEmail">Email</string>
+    <string name="profileGender">Gender</string>
+    <string name="profileStatus">Status</string>
+    <string name="profileSexOri">Sexual Orientation</string>
+    <string name="profileAddDetailTxt">Tell us about you</string>
+    <string name="profileDesc">write here a description</string>
+    <string name="profileTxtTtl">Add your profile picture</string>
+    <string name="completeDetailsTxtTtl">few more steps</string>
+    <string name="cpEnterToMatchesTxt">get me in!</string>
+
+    <!-- Complete Details Fragment -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iAmTxt">I Am:</string>
+    <string name="fragCBTxtOther">Other</string>
+    <string name="fragCBTxtMale">Man</string>
+    <string name="fragCBTxtMen">Men</string>
+    <string name="fragCBTxtFemale">Woman</string>
+    <string name="fragCBTxtWomen">Women</string>
+    <string name="interestedTxt">Interested in:</string>
+    <string name="compDetailsTxtTtl">Your Preferences</string>
+    <string name="fragCBTxtBoth">Both</string>
+    <string name="CompDetContinue">Continue</string>
+    <string name="addProfContinueBtnTxt">Continue</string>
+    <string name="someProfileUserImage">just a photo of the user</string>
+    <string name="TextViewLoadTxt">Loading... Please wait</string>
+    <string name="aboutTxt">This is the About page</string>
+    <string name="longDescriptionTxt">Finn had been flung on his face and chained to the stone slabs of the transitway.
+        His arms, spread wide, were weighted with links so heavy, he could barely drag his wrists off the ground.
+        His ankles were tangled in a slithering mass of metal, bolted through a ring in the pavement.
+        He couldn’t raise his chest to get enough air. He lay exhausted, the stone icy against his cheek.</string>
+    <string name="aboutMeTxt">About Me:</string>
+    <string name="aboutMeDescriptionTxt">Description</string>
+    <string name="addLocTxtTtl">Your Location</string>
+    <string name="birthDateTxt">Your Birth date</string>
+    <string name="birthDateHintTxt">for instance - 12/05/1996</string>
+    <string name="addLocationTxt">Your Current Location Presented Here</string>
+    <string name="toLociationBtn">Try Again</string>
+    <string name="alertDialogTxtTtl">Enter New Value</string>
+    <string name="okBtnTxt">OK</string>
+    <string name="cancelBtnTxt">Cancel</string>
+
+    <string name="usernameAlertTxtMsg">Update your username:</string>
+    <string name="emailAlertTxtMsg">Update your email:</string>
+    <string name="dobAlertTxtMsg">Update your birth date:</string>
+    <string name="genderAlertTxtMsg">Update your gender:</string>
+    <string name="interestedAlertTxtMsg">Update your sexual preferences:</string>
+    <string name="descAlertTxtMsg">Update your description:</string>
+    <string name="alertTxtMsgDefault">Update your info:</string>
+    <string name="statistics">Statistics</string>
+    <string name="myProfile">My Profile</string>
+    <string name="myMatches">My Matches</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+
+</resources>

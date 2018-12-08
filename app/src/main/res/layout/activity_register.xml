@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ProgressBar
+        android:id="@+id/registerActivityProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminate="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/registerActivityTvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/TextViewLoadTxt"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/registerActivityForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/regUsernameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/usernameLoginHint"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/editTextMargin"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/regEmailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailLoginHint"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/editTextMargin"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/regPasswordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/regPasswordHint"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/editTextMargin"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/regConfirmPasswordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/regConfirmPassHint"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/editTextMargin"/>
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1.1"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btnMargin"
+            android:layout_weight="1"
+            android:background="@color/btnColor"
+            android:text="@string/registerBtnTxt"/>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

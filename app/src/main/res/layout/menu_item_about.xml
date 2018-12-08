@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightPrimary"
+    tools:context="benco.shellwemeet.menu.About">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/aboutTxt"
+        android:gravity="center_horizontal|center_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/splashTxtSize"
+        android:textColor="@color/blackText"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightPrimary">
+
+    <ProgressBar
+        android:id="@+id/compDetailsProgBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/compDetailsTvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/TextViewLoadTxt"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/compDetailsForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/compDetailsTxtTtl"
+        android:textAlignment="center"
+        android:textColor="@color/blackText"
+        android:textSize="@dimen/splashTxtSize"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/completeTxtSize"
+            android:text="@string/iAmTxt"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr">
+
+        <CheckBox
+            android:id="@+id/cbMan"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCBTxtMale"/>
+        <CheckBox
+            android:id="@+id/cbWoman"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCBTxtFemale"/>
+        <CheckBox
+            android:id="@+id/cbOther"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCBTxtOther"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <!-- Will show after clicking Other checkbox -->
+    <EditText
+        android:id="@+id/editTxtOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fragCBTxtOther"
+        android:enabled="false"
+        android:accessibilityTraversalAfter="@id/cbOther"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/completeTxtSize"
+            android:text="@string/interestedTxt"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr">
+
+        <CheckBox
+            android:id="@+id/intCBMen"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCBTxtMen"/>
+        <CheckBox
+            android:id="@+id/intCBWomen"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCBTxtWomen"/>
+        <CheckBox
+            android:id="@+id/intCBBoth"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCBTxtBoth"/>
+        <CheckBox
+            android:id="@+id/intCBOther"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragCBTxtOther"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!-- Will show after clicking Other checkbox -->
+        <EditText
+            android:id="@+id/intEditTxtOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fragCBTxtOther"
+            android:enabled="false"
+            android:accessibilityTraversalAfter="@id/intCBOther"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/completeTxtSize"
+            android:text="@string/aboutMeTxt"/>
+        <EditText
+            android:id="@+id/compDetailsAboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:accessibilityTraversalAfter="@id/intCBOther"
+            android:hint="@string/aboutMeDescriptionTxt"/>
+        <Button
+            android:id="@+id/CompDetContinueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btnColor"
+            android:layout_margin="@dimen/btnMargin"
+            android:text="@string/CompDetContinue"
+            android:enabled="false"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

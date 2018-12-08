@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layoutDirection="ltr"
+    android:id="@+id/coordinatedLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="false"
+    android:background="@color/colorLightPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profileTxtTtl"
+        android:textAlignment="center"
+        android:textSize="@dimen/splashTxtSize"/>
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/profImgView"
+        android:layout_marginHorizontal="@dimen/profileImgMarginHorizontal"
+        android:layout_marginTop="@dimen/profileImgMarginVertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cropScaleType="fitCenter"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layoutDirection="ltr"
+        android:id="@+id/fabBtnAddImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorDivider"
+        android:src="@drawable/icongallery"
+        android:onClick="onLoadImageClick"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layoutDirection="ltr"
+        android:id="@+id/fabBtnCropImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorDivider"
+        android:src="@drawable/cropicon"
+        android:onClick="onCropImageClick"/>
+
+    <Button
+        android:id="@+id/addProfContinueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addProfContinueBtnTxt"
+        android:layout_gravity="bottom|center"
+        android:enabled="false"
+        android:layout_marginBottom="15dp"
+        android:onClick="onContinueBtnClick"/>
+
+</android.support.design.widget.CoordinatorLayout>

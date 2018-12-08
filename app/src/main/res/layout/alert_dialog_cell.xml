@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr">
+
+
+    <TextView
+        android:id="@+id/cellAlertTxtTtl"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alertDialogTxtTtl"
+        android:textSize="@dimen/splashTxtSize"
+        android:textColor="@color/blackText"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/cellAlertTxtBody"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alertDialogTxtTtl"
+        android:textSize="@dimen/profileTxtSize"
+        android:textColor="@color/cardview_dark_background"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/cellAlertEditText"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cellAlertCancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelBtnTxt"
+            android:layout_weight="1"
+            android:background="@color/btnColor"
+            android:layout_margin="@dimen/btnMargin"/>
+
+        <Button
+            android:id="@+id/cellAlertOkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/okBtnTxt"
+            android:layout_weight="1"
+            android:background="@color/btnColor"
+            android:layout_margin="@dimen/btnMargin"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

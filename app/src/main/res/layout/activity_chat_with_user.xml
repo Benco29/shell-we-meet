@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatWithUserActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    style="@style/AppTheme.NoActionBar"
+    android:layoutDirection="ltr">
+
+    <ProgressBar
+        android:id="@+id/chatWithUserProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/chatWithUserTvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/TextViewLoadTxt"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/chatWithUserForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+<!-- credit to  Henning Dodenhof for circular image view-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chatProfileImage"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:civ_border_width="1.5dp"
+            app:civ_border_color="@color/colorLightPrimary"
+            android:src="@drawable/seasnail"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr">
+
+            <TextView
+                android:id="@+id/chatActivityUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/blackText"/>
+
+            <TextView
+                android:id="@+id/chatActivityIsOnlineTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John is online"
+                android:textColor="@color/colorTextIcons"
+                android:layout_marginLeft="15dp"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatActivityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorLightPrimary"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr">
+
+        <EditText
+            android:id="@+id/chatActivityEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:hint="write your message here"
+            android:textAlignment="center"
+            android:background="@color/profileBackgroundColor"/>
+
+
+        <ImageButton
+            android:id="@+id/chatActivitySendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/profileBackgroundColor"
+            android:src="@drawable/sendimg" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>
